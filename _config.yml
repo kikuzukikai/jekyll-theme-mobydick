@@ -1,0 +1,174 @@
+# Site settings
+title: 駆逐艦菊月会
+tagline: Destroyer Kikuzuki Association
+
+description: > # this means to ignore newlines until "important_message:"
+  当会は、駆逐艦菊月に所縁のある旧軍人軍属、戦歿者並びに物故者の遺族、有志によって組織され、その全てに交流の場を提供する戦友会です。
+  駆逐艦菊月の顕彰に主眼を置き、一切の政治的思想に関与せず、菊月元乗組員であり戦歿または物故された方々に対する慰霊、会員相互の親睦や情報共有、その他菊月関連の調査研究及び資料の収集を行なっています。
+important_message: 駆逐艦菊月会では、駆逐艦菊月の元乗組員、またそのご遺族を引き続き探しております。お気軽にご連絡ください。
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.kikuzukikai.org" # the base hostname & protocol for your site, e.g. http://example.com
+domain: "kikuzukikai.org"
+
+repository: kikuzukikai/jekyll-theme-mobydick
+
+timezone: Asia/Tokyo
+
+google_analytics: UA-71602879-1
+corporate_number: 5700150090575
+
+youtube: kikuzukikai
+x-twitter: kikuzukikai
+facebook: kikuzukikai
+instagram: kikuzukikai
+github: kikuzukikai
+
+# Color settings
+light:
+  bg: "#fff"
+  theme: "#000080"
+  text: "#24292f"
+  meta: "#57606a"
+  link: "#0969da"
+  gray: "#f6f8fa"
+  alpha: "rgba(0,0,0,.1)"
+  border: "#d0d7de"
+
+dark:
+  bg: "#0d1117"
+  theme: "#c9d1d9"
+  text: "#c9d1d9"
+  meta: "#8b949e"
+  link: "#58a6ff"
+  gray: "#161b22"
+  alpha: "rgba(0,0,0,.1)"
+  border: "#30363d"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  footnote_backlink:   '&#x21a9;&#xfe0e;'
+  math_engine:         mathjax
+  math_engine_opts:
+    preview:           true
+    preview_as_code:   true
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: []
+
+assets:
+  compression: true # true on JEKYLL_ENV=production
+  gzip: true
+  defaults:
+    js: { integrity: false } # true on JEKYLL_ENV=production
+    css: { integrity: false } # true on JEKYLL_ENV=production
+  precompile: all
+  raw_precompile: all
+
+# Gem settings
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-github-metadata
+  - jekyll-last-modified-at
+  - jekyll-include-cache
+
+paginate: 10
+paginate_path: "/articles/page:num/"
+
+# Optional settings
+last-modified-at:
+    date-format: "%Y年%-m月%-d日"
+  
+exclude:
+  - Gemfile
+  - README.md
+
+# Date format settings
+date_format: "%Y年%-m月%-d日"
+
+# Collections settings
+collections:
+  activities:
+    output: true
+    permalink: /:collection/:path.html
+  authors:
+    output: true
+    permalink: /:collection/:path.html
+    order: 
+      - yasukuni-hashimoto.md
+      - hitoki-horie.md
+      - yusuke-nakanishi.md
+      - yuuichi-sasaki.md
+      - kentaro-kurita.md
+      - rin-kagurasho.md
+  disclosure:
+    output: true
+    permalink: /:collection/:path.html
+  documents:
+    output: true
+    permalink: /:collection/:path.html
+  forms:
+    output: true
+    permalink: /:collection/:path.html
+  links:
+    output: true
+    permalink: /:collection/:path.html
+  posts:
+    output: true
+    permalink: /articles/:title.html
+  press:
+    output: true
+    permalink: /:collection/:title.html # yyyy-mm-dd-unixtime.md
+  rules:
+    output: true
+    permalink: /:collection/:path.html
+  maris:
+    output: true
+    permalink: /:collection/:path.html
+
+# Site nav & reg settings
+nav:
+  - title: "活動紹介"
+    url: "/activities/"
+  - title: "情報公開"
+    url: "/disclosure/"
+  - title: "団体紹介資料"
+    url: "/documents/"
+  - title: "会則及び規程"
+    url: "/rules/"
+  - title: "各種フォーム"
+    url: "/forms/"
+
+reg:
+  - title: "特定商取引法に基づく表記"
+    url: "/rules/notice.html"
+  - title: "個人情報保護規程"
+    url: "/rules/privacy.html"
+  - title: "ソーシャルメディアポリシー"
+    url: "/rules/socialmedia.html"
+  - title: "サイトマップ"
+    url: "/links/sitemap.html"
+
+# Used for the edit on github include
+edit-on-github:
+    enabled: true
+
+# End

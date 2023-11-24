@@ -1,0 +1,27 @@
+toc:
+  - title: 公式アカウント
+    items:
+      - service: YouTube
+        name: 駆逐艦菊月会
+        id: kikuzukikai
+        url: www.youtube.com/c/kikuzukikai
+      - service: Twitter
+        name: 駆逐艦菊月会
+        id: kikuzukikai
+        url: twitter.com/kikuzukikai
+      - service: Facebook
+        name: 駆逐艦菊月会
+        id: kikuzukikai
+        url: www.facebook.com/kikuzukikai
+      - service: Instagram
+        name: 駆逐艦菊月会
+        id: kikuzukikai
+        url: www.instagram.com/kikuzukikai
+      - service: GitHub
+        name: 駆逐艦菊月会
+        id: kikuzukikai
+        url: github.com/kikuzukikai
+      - service: note
+        name: 駆逐艦菊月会
+        id: kikuzukikai
+        url: note.com/kikuzukikai

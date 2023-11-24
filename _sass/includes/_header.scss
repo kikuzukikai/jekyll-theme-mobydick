@@ -1,0 +1,178 @@
+.header {
+  // header styles
+  height: $header-height;
+  background-color: $header-background-color;
+  border-bottom: solid $header-border-width var(--border);
+  box-shadow: 0 $header-shadow-width 6px $header-shadow-color;
+  // header flex property
+  @include flex-valign(center);
+  flex-flow: row wrap;
+  justify-content: space-between;
+  svg {
+    height: $header-logo-height;
+  }
+  .logo {
+    @include flex-valign(center);
+    flex-flow: row nowrap;
+    text-decoration: none;
+    color: var(--text);
+  }
+  > .navigation {
+    ul {
+      @include flex-valign(center);
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      li {
+        margin-right: $navigation-margin;
+        .menu {
+          @include media-query-max($on-tablet) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+  
+hr {
+  border-top: 1px solid var(--alpha);
+}
+
+  .header {
+    padding: 0 1rem;
+    > #hamburger-button {
+      // hamburger button flex property
+      @include flex-valign(center);
+      flex-flow: row nowrap;
+      justify-content: center;
+      // hamburger button styles
+      width: $hamburger-button-size;
+      height: $hamburger-button-size;
+      color: var(--text);
+      border: solid $header-border-width var(--border);
+      border-radius: .3rem;
+      outline: none;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+  .nav-open #hamburger-overlay {
+    opacity: .8 !important;
+    visibility: visible !important;
+  }
+  .nav-open #hamburger-menu {
+    right: 0 !important;
+  }
+  #hamburger-overlay {
+    background-color: var(--bg);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
+    cursor: pointer;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+  }
+  #hamburger-menu {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+    width: $hamburger-menu-width + 2vmax;
+    background-color: $header-background-color;
+    box-shadow: -($header-shadow-width) 0 6px $header-shadow-color;
+    box-sizing: border-box;
+    padding: ($header-height + $header-border-width) 0;
+    overflow-y: auto;
+    color: var(--text);
+    // hamburger menu position
+    position: fixed;
+    right: -($hamburger-menu-width + 2vmax);
+    z-index: 8;
+    // navigation animation
+    transition: all .6s;
+    #autocomplete {
+      margin: 0 1vw;
+    }
+    > .doc-nav {
+      ul {
+        list-style-type: none;
+        margin: 0;
+      }
+      .menu summary {
+          display: list-item !important;
+          color: var(--text);
+          text-decoration: none;
+          display: inline-block;
+          padding: 8px 0 8px 15px;
+          box-sizing: border-box;
+          width: 100%;
+          &:hover {
+            background-color: var(--alpha);
+          }
+        }
+        .menu a {
+          color: var(--text);
+          text-decoration: none;
+          display: inline-block;
+          padding: 8px 0 8px 15px;
+          box-sizing: border-box;
+          width: 100%;
+          &:hover {
+          background-color: var(--link);
+          color: var(--bg);
+        }
+      }
+      input {
+        display: none;
+      }
+      label{
+        color: var(--text);
+        display: inline-block;
+        padding: 8px 0 8px 30px;
+        box-sizing: border-box;
+        width: 100%;
+      }
+      .sub-menu a {
+        color: var(--text);
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 0 8px 30px;
+        box-sizing: border-box;
+        width: 100%;
+      }
+      ul a:hover {
+        color: var(--bg);
+        background-color: var(--link);
+      }
+      .sub-menu li {
+        height: 0;
+        overflow: hidden;
+        transition: all .6s;
+      }
+      #menubar1:checked ~ #links1 li,
+      #menubar2:checked ~ #links2 li,
+      #menubar3:checked ~ #links3 li {
+        height: 44px;
+        opacity: 1;
+      }
+    }
+  }
+
+@include media-query-min($on-tablet + 1) {
+  .header {
+    padding: 0 $base-desktop-padding;
+    > .navigation {
+      ul {
+        li {
+          margin-right: $navigation-margin * 2;
+        }
+        li:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

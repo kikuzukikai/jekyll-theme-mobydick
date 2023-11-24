@@ -1,0 +1,41 @@
+[build]
+ignore = "git diff --quiet HEAD^ HEAD sub_dir/"
+
+[[redirects]]
+from = "https://kikuzukikai.netlify.app/*"
+to = "https://www.kikuzukikai.org/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "/posts/*"
+to = "/articles/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "/blog/*"
+to = "/articles/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "/docs/*"
+to = "/documents/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "/special/*"
+to = "/activities/:splat"
+status = 301
+force = true
+
+[[plugins]]
+package = "@algolia/netlify-plugin-crawler"
+  [plugins.inputs]
+  branches = ['master']
+  disabled = false
+  pathPrefix = "/"
+  customDomain = "www.kikuzukikai.org"
+  renderJavaScript = true

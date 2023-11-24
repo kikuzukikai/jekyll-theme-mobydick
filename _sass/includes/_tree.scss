@@ -1,0 +1,50 @@
+#markdown-toc {
+  list-style-type: "\0023\00a0" !important;
+
+ul {
+  margin-left: 2em;
+  list-style-type: inherit;
+}
+}
+
+.sitemap {
+  color: var(--text);
+
+ul {
+  list-style-type: none;
+
+li ul {
+  margin-top: .5em;
+  margin-bottom: .75em;
+  margin-left: 48px;
+
+li {
+  margin-bottom: .25em;
+  position: relative;
+}
+ 
+li::before {
+  content: "";
+  position: absolute;
+  top: -0.5em;
+  left: -16px;
+  width: 10px;
+  height: calc(100% + .75em);
+  border-left: 1px solid var(--text);
+}
+ 
+li:last-child::before {
+  height: calc(1em + .25em);
+}
+ 
+li::after {
+  content: "";
+  position: absolute;
+  top: .75em;
+  left: -16px;
+  width: 10px;
+  border-bottom: 1px solid var(--text);
+}
+}
+}
+}

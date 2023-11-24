@@ -1,0 +1,9 @@
+﻿---
+---
+
+# Algolia-Crawler-Verif: A66A8CE1323373AC
+
+User-agent: *
+Disallow: 
+
+Sitemap: {{ site.url }}/sitemap.xml

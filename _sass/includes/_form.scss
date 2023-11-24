@@ -1,0 +1,119 @@
+.hidden {
+  display: none;
+}
+
+.controls {
+  display: block;
+  width: 100%;
+  padding: .5rem 1rem;
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: var(--text);
+  background-color: var(--bg);
+  background-clip: padding-box;
+  border: 1px solid var(--border);
+  border-radius: .3rem;
+}
+
+label {
+  white-space: nowrap;
+}
+
+input[type="email"]:disabled::placeholder {
+  color: var(--bg);
+}
+
+textarea {
+  height: 20rem;
+}
+
+input,
+select,
+textarea {
+  background: transparent !important;
+}
+
+.button {
+  width: 100%;
+  padding: .5rem 1rem;
+  margin: 1rem 0;
+  border-width: 0;
+  border-radius: .3rem;
+  background: var(--text);
+  color: var(--bg);
+}
+
+fieldset {
+  border: 1px solid var(--border);
+  padding: 15px;
+  border-radius: .3rem;
+  legend {
+    margin: 0 auto;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--text);
+  }
+}
+
+.form.join fieldset legend + * {
+  clear: both;
+}
+
+.form.join .row {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 10px;
+}
+
+.form.join .field {
+  position: relative;
+  width: 100%;
+}
+
+.form.join .field + .field {
+  margin-left: 10px;
+}
+
+.form.join label {
+  width: 100%;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.form.join .input {
+  width: 100%;
+  background: transparent;
+  padding: 5px 0 6px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.form.join input,
+.form.join button,
+.form.join select {
+  -webkit-animation: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border-style: none;
+  border-radius: 0;
+}
+
+.form.join button {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin: 20px 0 0;
+  background-color: var(--text);
+  border-radius: .3rem;
+  color: var(--bg);
+  font-weight: 500;
+  cursor: pointer;
+}

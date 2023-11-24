@@ -1,0 +1,61 @@
+---
+layout: forms
+title: ご入会申し込み
+---
+<section>
+  <p><a href="{{ site.url }}/rules/constitution.html#%E7%AC%AC6%E6%9D%A1-%E4%BC%9A%E5%93%A1%E8%B3%87%E6%A0%BC%E3%81%AE%E5%8F%96%E5%BE%97">会則第6条</a>に基づく、駆逐艦菊月会入会のためのフォームです。
+以下は駆逐艦菊月会への入会を希望し、<a href="{{ site.url }}/rules/constitution.html">会則</a>と<a href="{{ site.url }}/rules/privacy.html">個人情報保護規程</a>に同意いただける方のみ記入提出してください。</p> 
+  <br />
+  <div class="cell form join">
+    <form name="join" action="/forms/thanks.html" method="POST" netlify-honeypot="captcha" data-netlify="true">
+      <fieldset>
+        <legend>申込者記入欄</legend>
+        <div class="row hidden">
+          <div class="field">
+            <label for="captcha"></label>
+            <input id="captcha" class="input" name="captcha">
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="name">名前</label>
+            <input id="name" class="input" name="名前" type="text" placeholder="山田 太郎" required autocomplete="name">
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="email">Eメール</label>
+            <input id="email" class="input" name="Eメール" type="text" placeholder="taro.yamada@example.com" required autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="phone">電話番号</label>
+            <input id="phone" class="input" name="電話番号" type="text" placeholder="03-1234-5678" required autocomplete="tel">
+          </div>
+        </div>
+        <div data-locale-reversible>
+          <div class="row" data-locale-reversible>
+            <div class="field">
+              <label for="zip">郵便番号</label>
+              <input id="zip" class="input empty" name="郵便番号" type="text" placeholder="150-0001" required autocomplete="postal-code">
+            </div>
+            <div class="field">
+              <label for="state">都道府県</label>
+              <input id="state" class="input empty" name="都道府県" type="text" placeholder="東京都" required autocomplete="address-level1">
+            </div>
+            <div class="field">
+              <label for="city">市区町村</label>
+              <input id="city" class="input" name="市区町村" type="text" placeholder="渋谷区" required autocomplete="address-level2">
+            </div>
+          </div>
+          <div class="row">
+            <div class="field">
+              <label for="address">住所</label>
+              <input id="address" class="input" name="住所" type="text" placeholder="神宮前 4-30" required autocomplete="address-line1">
+            </div>
+          </div>
+        </div>
+        <button type="submit">提出する</button>
+      </fieldset>
+    </form>
+  </div>
+</section>

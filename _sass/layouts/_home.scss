@@ -1,0 +1,58 @@
+h2 {
+  font-size: 1.5rem;
+}
+
+section {
+  color: var(--text);
+}
+
+  .home {
+  > section {
+    text-align: center;
+
+    h1,
+    h2,
+    p {
+      margin-top: $home-text-margin;
+      margin-bottom: $home-text-margin;
+    }
+  }
+  > .card {
+    color: var(--text);
+    padding-bottom: $home-landing-padding;
+  }
+  p, ul, ol {
+    display: table;
+    text-align: left;
+    margin: auto;
+  }
+}
+
+@include media-query-max($on-mobile) {
+  .home {
+  > section {
+    padding-left: $base-mobile-padding;
+    padding-right: $base-mobile-padding;
+    padding-top: $home-section-padding - 20;
+    padding-bottom: $home-section-padding - 20;
+  }
+  }
+}
+
+@media (min-width: $on-mobile + 1) and (max-width: $on-desktop - 1) {
+  .home {
+  > section {
+    padding-left: $base-tablet-padding;
+    padding-right: $base-tablet-padding;
+  }
+  }
+}
+
+@include media-query-min($on-desktop) {
+  .home {
+  > section {
+      padding-left: $base-desktop-padding;
+      padding-right: $base-desktop-padding;
+  }
+  }
+}

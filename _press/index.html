@@ -1,0 +1,36 @@
+---
+layout: default
+title: 報道発表
+pagination: 
+  enabled: true
+unless: true
+permalink: /press/
+---
+<main class="container">
+<section class="blog">
+    <ul class="list">
+    {% assign sorted = site.press | reverse %}
+    {% for item in sorted %}
+    {% unless item.unless %}
+        <li>
+            <time class="time">
+                {% assign date_format = site.date_format %}
+                {{ item.date | date: date_format }}
+            </time>
+            <h2>
+                <a class="link" href="{{ item.url }}">{{ item.title | escape }}</a>
+            </h2>
+            <p class="meta">
+                {{ item.headline | strip_html | escape | truncate: 80 }}
+            </p>
+        </li>
+    {% endunless %}
+    {% endfor %}
+    </ul>
+</section>
+<div id="back-to-top">
+    <i class="fa-angle-up"></i>
+</div>
+</main>
+<div id="push"></div>
+</div>

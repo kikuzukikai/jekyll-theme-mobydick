@@ -1,0 +1,40 @@
+toc:
+  - title: 関係戦友会
+    items:
+      - page: 全国ソロモン会
+        url: www.japan-solomon.com
+        protocol: http
+      - page: 軍艦武藏会
+        url: gunkanmusashikai.org
+        protocol: https
+      - page: 美保関沖事件慰霊の会
+        url: gojikai1927.wixsite.com/mihonoseki
+        protocol: https
+  - title: 関係法人等
+    items:
+      - page: 大東亜戦争全戦没者慰霊団体協議会
+        url: www.ireikyou.com
+        protocol: https
+      - page: 駆逐艦模型研究室
+        url: ddmlabo014.wixsite.com/ddmlabo
+        protocol: https
+      - page: 浅草 寿仙院
+        url: www.jusenin.or.jp
+        protocol: http
+      - page: ファインモールド
+        url: www.finemolds.co.jp
+        protocol: https
+      - page: 帝國海軍アーカイブ
+        url: www.ijnarchive.org
+        protocol: https
+  - title: 菊月会関係
+    items:
+      - page: オンラインショップ(Booth)
+        url: kikuzukikai.booth.pm
+        protocol: https
+      - page: オンラインショップ(Base)
+        url: kikuzukikai.base.shop
+        protocol: https
+      - page: プレスリリース
+        url: prtimes.jp/main/html/searchrlp/company_id/31198
+        protocol: https

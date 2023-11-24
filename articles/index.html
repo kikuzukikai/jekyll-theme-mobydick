@@ -1,0 +1,56 @@
+---
+layout: default
+title: 投稿記事
+pagination: 
+  enabled: true
+---
+<main class="container">
+<section class="blog">
+    <ul class="list">
+    {% for post in paginator.posts %}
+        <li>
+            <time class="time">
+                {% assign date_format = site.date_format %}
+                {{ post.date | date: date_format }}
+            </time>
+            <h2>
+                <a class="link" href="{{ post.url }}">{{ post.title | escape }}</a>
+            </h2>
+            <p class="meta">
+                {{ post.content | strip_html | escape | truncate: 80 }}
+            </p>
+        </li>
+    {% endfor %}
+    </ul>
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}">&laquo;</a>
+  {% else %}
+    <span>&laquo;</span>
+  {% endif %}
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <span>{{ page }}</span>
+    {% elsif page == 1 %}
+      <a href="/posts/">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}">&raquo;</a>
+  {% else %}
+    <span>&raquo;</span>
+  {% endif %}
+</div>
+{% endif %}
+<br />
+<p class="rss-subscribe">subscribe <a href="{{ '/feed.xml' | relative_url }}">via RSS</a></p>
+</section>
+<div id="back-to-top">
+    <i class="fa-angle-up"></i>
+</div>
+</main>
+<div id="push"></div>
+</div>

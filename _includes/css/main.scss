@@ -1,0 +1,100 @@
+$baseurl: "{{ site.baseurl }}";
+
+// Colors
+:root {
+    --bg: {{ site.light.bg }};
+    --theme: {{ site.light.theme }};
+    --text: {{ site.light.text }};
+    --meta: {{ site.light.meta }};
+    --link: {{ site.light.link }};
+    --gray: {{ site.light.gray }};
+    --alpha: {{ site.light.alpha }};
+    --border: {{ site.light.border }};
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: {{ site.dark.bg }};
+    --theme: {{ site.dark.theme }};
+    --text: {{ site.dark.text }};
+    --meta: {{ site.dark.meta }};
+    --link: {{ site.dark.link }};
+    --gray: {{ site.dark.gray }};
+    --alpha: {{ site.dark.alpha }};
+    --border: {{ site.dark.border }};
+  }
+}
+
+// Variables
+
+// Base
+$on-mobile: 576px;
+$on-tablet: 846px;
+$on-desktop: 992px;
+// fonts
+$head-font-family: serif;
+$base-font-family: sans-serif;
+$base-line-height: 1.75;
+// margin and padding
+$base-mobile-padding: 15px;
+$base-tablet-padding: 5%;
+$base-desktop-padding: calc($base-tablet-padding * 2);
+
+// Header.html
+$header-height: 60px;
+$header-background-color: var(--gray);
+$header-border-width: 2px;
+$header-shadow-color: var(--alpha);
+$header-shadow-width: 4px;
+$header-logo-height: 40px;
+// navigation
+$navigation-margin: 20px;
+// hamburger
+$hamburger-button-size: 40px;
+$hamburger-menu-width: 50vmax;
+$hamburger-element-margin: 20px;
+
+// Home.html
+$home-section-padding: 30px;
+$home-text-margin: 20px;
+$company-gallery-height: 60px;
+$home-landing-padding: 120px;
+
+// Footer.html
+$footer-background-color: var(--gray);
+$footer-border-color: var(--text);
+$footer-border-width: 1px;
+$footer-padding: 40px;
+$footer-font-color: var(--text);
+$social-icon-size: 32px;
+$footer-avatar-size: 60px;
+
+// Page.html and Post.html
+$post-bottom-margin: 50px;
+$header-bottom-margin: 30px;
+
+// Blog.html
+$blog-margin: 50px;
+$blog-list-margin: 40px;
+
+// Docs.html
+$doc-mobile-padding: 15px;
+$doc-tablet-padding: 2%;
+$doc-desktop-padding: 3%;
+$doc-menu-width: 260px;
+$documentation-margin: 40px;
+
+// Imports
+@import 'globals/bootstrap';
+@import 'globals/fontawesome';
+@import 'mixins/mixins';
+@import 'includes/header';
+@import 'includes/footer';
+@import 'includes/sticky';
+@import 'includes/table';
+@import 'includes/form';
+@import 'includes/tree';
+@import 'layouts/default';
+@import 'layouts/home';
+@import 'layouts/post';
+@import 'layouts/blog';
+@import 'layouts/docs';

@@ -1,0 +1,53 @@
+.no-symbol {
+  content: "\20E0";
+}
+
+@font-face {
+  font-family: 'fontawesome';
+  src: url('/assets/fonts/fa-subset.woff2') format('woff2');
+  font-display: swap;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fontawesome' !important;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.fa-2x {
+  font-size: 2rem;
+}
+
+.fa-pencil:before {
+  content: "\e900";
+}
+.fa-bars:before {
+  content: "\e901";
+}
+.fa-angle-up:before {
+  content: "\e902";
+}
+.fa-external-link:before {
+  content: "\e903";
+}
+.fa-github:before {
+  content: "\e904";
+  color: var(--text);
+}
+.fa-instagram:before {
+  content: "\e905";
+  color: var(--text);
+}
+.fa-facebook:before {
+  content: "\e906";
+  color: var(--text);
+}
+.fa-x-twitter:before {
+  content: "\e907";
+  color: var(--text);
+}
+.fa-youtube:before {
+  content: "\e908";
+  color: var(--text);
+}
