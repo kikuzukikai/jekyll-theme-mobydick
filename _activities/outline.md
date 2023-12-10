@@ -29,7 +29,7 @@ title: 団体概要
 
     <dt>連絡先</dt>
     <dd>
-    <p><a href="/forms/inquiry.html">照会フォーム</a>または<a href="{{ site.url }}">トップページ</a>記載のメールアドレスまでお願いいたします。</p>
+    <p><a href="{{ site.url }}">トップページ</a>記載のメールアドレスまでお願いいたします。</p>
     </dd>
 
   </dl>
