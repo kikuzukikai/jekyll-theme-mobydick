@@ -1,5 +1,5 @@
 ---
-layout: disclosure
+layout: rules
 title: ビジュアルアイデンティティ
 ---
 

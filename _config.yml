@@ -131,8 +131,6 @@ nav:
     url: "/forms/"
 
 reg:
-  - title: "特定商取引法に基づく表記"
-    url: "/rules/notice.html"
   - title: "個人情報保護規程"
     url: "/rules/privacy.html"
   - title: "ソーシャルメディアポリシー"
