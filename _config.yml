@@ -5,7 +5,6 @@ tagline: Destroyer Kikuzuki Association
 description: > # this means to ignore newlines until "important_message:"
   当会は、駆逐艦菊月に所縁のある旧軍人軍属、戦歿者並びに物故者の遺族、有志によって組織され、その全てに交流の場を提供する戦友会です。
   駆逐艦菊月の顕彰に主眼を置き、一切の政治的思想に関与せず、菊月元乗組員であり戦歿または物故された方々に対する慰霊、会員相互の親睦や情報共有、その他菊月関連の調査研究及び資料の収集を行なっています。
-important_message: 駆逐艦菊月会では、駆逐艦菊月の元乗組員、またそのご遺族を引き続き探しております。お気軽にご連絡ください。
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.kikuzukikai.org" # the base hostname & protocol for your site, e.g. http://example.com
@@ -96,7 +95,7 @@ paginate_path: "/articles/page:num/"
 # Optional settings
 last-modified-at:
     date-format: "%Y年%-m月%-d日"
-  
+
 exclude:
   - Gemfile
   - README.md
@@ -107,19 +106,6 @@ date_format: "%Y年%-m月%-d日"
 # Collections settings
 collections:
   activities:
-    output: true
-    permalink: /:collection/:path.html
-  authors:
-    output: true
-    permalink: /:collection/:path.html
-    order: 
-      - yasukuni-hashimoto.md
-      - hitoki-horie.md
-      - yusuke-nakanishi.md
-      - yuuichi-sasaki.md
-      - kentaro-kurita.md
-      - rin-kagurasho.md
-  disclosure:
     output: true
     permalink: /:collection/:path.html
   documents:
@@ -134,13 +120,7 @@ collections:
   posts:
     output: true
     permalink: /articles/:title.html
-  press:
-    output: true
-    permalink: /:collection/:title.html # yyyy-mm-dd-unixtime.md
   rules:
-    output: true
-    permalink: /:collection/:path.html
-  maris:
     output: true
     permalink: /:collection/:path.html
 
@@ -148,8 +128,6 @@ collections:
 nav:
   - title: "活動紹介"
     url: "/activities/"
-  - title: "情報公開"
-    url: "/disclosure/"
   - title: "団体紹介資料"
     url: "/documents/"
   - title: "会則及び規程"

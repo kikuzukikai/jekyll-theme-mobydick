@@ -7,30 +7,6 @@ to = "https://www.kikuzukikai.org/:splat"
 status = 301
 force = true
 
-[[redirects]]
-from = "/posts/*"
-to = "/articles/:splat"
-status = 301
-force = true
-
-[[redirects]]
-from = "/blog/*"
-to = "/articles/:splat"
-status = 301
-force = true
-
-[[redirects]]
-from = "/docs/*"
-to = "/documents/:splat"
-status = 301
-force = true
-
-[[redirects]]
-from = "/special/*"
-to = "/activities/:splat"
-status = 301
-force = true
-
 [[plugins]]
 package = "@algolia/netlify-plugin-crawler"
   [plugins.inputs]

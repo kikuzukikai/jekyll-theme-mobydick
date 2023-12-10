@@ -18,9 +18,6 @@ title: 概要
     <dt>所在地</dt>
     <dd>〒116-0003<br />東京都荒川区南千住8丁目6番2号1305</dd>
 
-    <dt>役員</dt>
-    <dd>幹事: (現在空席)<br />幹事補: <a href="/authors/yusuke-nakanishi.html">中西雄亮</a>, <a href="/authors/yuuichi-sasaki.html">佐々木優一</a></dd>
-
     <dt>会員</dt>
     <dd>11名<br />(2023年11月時点)</dd>
 
@@ -32,9 +29,7 @@ title: 概要
 
     <dt>連絡先</dt>
     <dd>
-    <p>勧誘、脅迫等の迷惑行為は当会の運営を妨害するものとして対処します。また当会は軍隊や兵器、戦争について、その是非や個人的主張を議論する場ではございません。</p>
-    <p>当会には専用の事務所がなく、専従の職員もおりません。<strong>電話でのご連絡は、ほかに連絡手段がない場合、または緊急連絡のみとさせていただきます。</strong>特に非通知や日本国外からの着信には対応いたしかねます。</p>
-    <p>ご連絡は、<a href="/forms/inquiry.html">照会フォーム</a>または<a href="{{ site.url }}">トップページ</a>記載のメールアドレスまでお願いいたします。</p>
+    <p><a href="/forms/inquiry.html">照会フォーム</a>または<a href="{{ site.url }}">トップページ</a>記載のメールアドレスまでお願いいたします。</p>
     </dd>
 
   </dl>
@@ -43,8 +38,6 @@ title: 概要
 <br />
 
 ## 駆逐艦菊月会のあゆみ
-
-- [沿革](/disclosure/history.html)もご参照ください。
 
 <div class="scroll" markdown="block">
 

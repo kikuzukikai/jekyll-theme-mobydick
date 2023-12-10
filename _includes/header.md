@@ -18,17 +18,6 @@
       <ul class="menu">
         <li><a href="/articles/">投稿記事</a>
       </li>
-      <li><a href="/press/">報道発表</a>
-      </li>
-      <li><details><summary>情報公開</summary>
-        <ul>
-          {% for item in site.disclosure %}
-          {% unless item.unless %}
-            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-          {% endunless %}
-          {% endfor %}
-        </ul></details>
-      </li>
       <li><details><summary>団体紹介資料</summary>
         <ul>
           {% for item in site.documents %}
