@@ -54,15 +54,6 @@ title: サイトマップ
           {% endfor %}
         </ul>
       </li>
-      <li><a href="/forms/">各種フォーム</a>
-        <ul>
-          {% for item in site.forms %}
-          {% unless item.unless %}
-            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-          {% endunless %}
-          {% endfor %}
-        </ul>
-      </li>
     </ul>
   </li>
 </ul>

@@ -4,13 +4,6 @@
         <ul class="horizontal-list">
             <li class="item">
                 <ul>
-                    {% for item in site.nav %}
-                    <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-                    {% endfor %}
-                </ul>
-            </li>
-            <li class="item">
-                <ul>
                     {% for item in site.reg %}
                     <li><a href="{{ item.url }}">{{ item.title }}</a></li>
                     {% endfor %}

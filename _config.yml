@@ -121,15 +121,7 @@ collections:
     output: true
     permalink: /:collection/:path.html
 
-# Site nav & reg settings
-nav:
-  - title: "活動紹介"
-    url: "/activities/"
-  - title: "会則及び規程"
-    url: "/rules/"
-  - title: "各種フォーム"
-    url: "/forms/"
-
+# Site regulation settings
 reg:
   - title: "個人情報保護規程"
     url: "/rules/privacy.html"
