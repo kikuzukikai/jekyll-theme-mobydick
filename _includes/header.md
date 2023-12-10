@@ -18,15 +18,6 @@
       <ul class="menu">
         <li><a href="/articles/">投稿記事</a>
       </li>
-      <li><details><summary>団体紹介資料</summary>
-        <ul>
-          {% for item in site.documents %}
-          {% unless item.unless %}
-            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-          {% endunless %}
-          {% endfor %}
-        </ul></details>
-      </li>
       <li><details><summary>会則及び規程</summary>
         <ul>
           {% for item in site.rules %}
@@ -55,8 +46,6 @@
         </ul></details>
       </li>
       <li><a href="/links/">関連リンク</a>
-      </li>
-      <li><a href="/authors/">投稿者一覧</a>
       </li>
     </ul>
   </div>

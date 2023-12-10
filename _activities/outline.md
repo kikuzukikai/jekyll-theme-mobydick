@@ -1,6 +1,6 @@
 ---
-layout: documents
-title: 概要
+layout: activities
+title: 団体概要
 ---
 <section>
 <div class="about-dl">
