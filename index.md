@@ -23,9 +23,6 @@ permalink: /
   <br />
   <p>お問い合わせはこちらへどうぞ: contact@{{ site.domain }}</p>
   </section>
-  <section class="card">
-  {% include_cached bulletin.md %}
-  </section>
 </article>
 <div id="back-to-top">
     <i class="fa-angle-up"></i>

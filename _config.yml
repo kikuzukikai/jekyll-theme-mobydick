@@ -108,9 +108,6 @@ collections:
   activities:
     output: true
     permalink: /:collection/:path.html
-  documents:
-    output: true
-    permalink: /:collection/:path.html
   forms:
     output: true
     permalink: /:collection/:path.html
@@ -128,8 +125,6 @@ collections:
 nav:
   - title: "活動紹介"
     url: "/activities/"
-  - title: "団体紹介資料"
-    url: "/documents/"
   - title: "会則及び規程"
     url: "/rules/"
   - title: "各種フォーム"
