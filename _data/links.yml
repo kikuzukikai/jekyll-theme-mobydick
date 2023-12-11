@@ -24,9 +24,6 @@ toc:
       - page: ファインモールド
         url: www.finemolds.co.jp
         protocol: https
-      - page: 帝國海軍アーカイブ
-        url: www.ijnarchive.org
-        protocol: https
   - title: 菊月会関係
     items:
       - page: オンラインショップ(Booth)
