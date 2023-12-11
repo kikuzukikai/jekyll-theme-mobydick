@@ -1,6 +1,6 @@
 ---
 layout: rules
-title: 会則及び規程
+title: 各種規程
 permalink: /rules/
 pagination: 
   enabled: true

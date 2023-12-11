@@ -7,9 +7,9 @@ layout: default
         <ul>
     <li class="category">
     {% if "/rules/" == page.url %}
-        <a href="/rules/" class="active">会則及び規程</a>
+        <a href="/rules/" class="active">各種規程</a>
     {% else %}
-        <a href="/rules/">会則及び規程</a>
+        <a href="/rules/">各種規程</a>
     {% endif %}
     </li>
         {% for item in site.rules %}
