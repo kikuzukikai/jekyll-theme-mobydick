@@ -7,13 +7,6 @@ layout: default
 <small><a href="{{ site.url }}">トップページ</a>&nbsp;&gt;&nbsp;<a href="/articles/">投稿記事</a>&nbsp;&gt;&nbsp;{{ page.title }}</small>
         <h1 itemprop="name headline">{{ page.title | escape }}</h1>
         <p class="meta">
-            {% assign author = site.authors | where: 'title', page.author | first %}
-            {% if author %}
-            投稿者: <a href="{{ author.url }}">{{ author.title }}</a>
-            {% else %}
-            投稿者: {{ page.author }}
-            {% endif %}
-            &nbsp;
             {{ page.date | date: "%Y年%-m月%-d日" }}投稿
             &nbsp;
             {{ page.last_modified_at | date: "%Y年%-m月%-d日" }}更新

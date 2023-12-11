@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 慰霊碑CF達成のお礼
-author: 中西雄亮
 tag: cenotaph
 ---
 駆逐艦菊月慰霊碑クラウドファンディングは28日夜を以って終了いたしました。

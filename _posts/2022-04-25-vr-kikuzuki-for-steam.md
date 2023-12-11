@@ -1,7 +1,6 @@
 ---
 layout: post
 title: VR菊月Steam版の進捗
-author: 堀江仁貴
 tag: vr-kikuzuki
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 菊月「復元図」頒布のお知らせ
-author: 中西雄亮
 tag: kikuzuki-blueprint
 ---
 

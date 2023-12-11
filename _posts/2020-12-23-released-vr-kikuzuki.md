@@ -1,7 +1,6 @@
 ---
 layout: post
 title: VR菊月をリリースしました
-author: 堀江仁貴
 tag: vr-kikuzuki
 ---
 昨日、菊月の3DモデルとVRコンテンツ(VR菊月)を[Booth](https://kikuzukikai.booth.pm)にてダウンロード可能な状態に致しました。

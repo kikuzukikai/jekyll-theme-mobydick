@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 慰霊碑CFの概要
-author: 中西雄亮
 tag: cenotaph
 ---
 

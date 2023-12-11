@@ -18,7 +18,7 @@
     <ul class="menu">
       <li><a href="/articles/">投稿記事</a>
       </li>
-      <li><details><summary>会則及び規程</summary>
+      <li><details><summary>各種規程</summary>
         <ul>
           {% for item in site.rules %}
           {% unless item.unless %}

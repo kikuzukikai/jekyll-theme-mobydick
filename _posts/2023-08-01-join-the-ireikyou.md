@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 【ご報告】大東亜慰霊協に加盟しました
-author: 世話人会
 ---
 各位
 

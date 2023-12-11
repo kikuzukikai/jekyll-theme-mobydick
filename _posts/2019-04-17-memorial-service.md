@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 駆逐艦菊月戦歿者慰霊祭のお誘い
-author: 堀江仁貴
 tag: memorial-service
 ---
 

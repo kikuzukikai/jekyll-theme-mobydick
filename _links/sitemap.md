@@ -14,7 +14,7 @@ title: サイトマップ
           {% endfor %}
         </ul>
       </li>
-      <li><a href="/rules/">会則及び規程</a>
+      <li><a href="/rules/">各種規程</a>
         <ul>
           {% for item in site.rules %}
           {% unless item.unless %}

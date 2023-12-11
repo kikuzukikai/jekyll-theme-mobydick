@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 菊月の図面を無料で公開します
-author: 堀江仁貴
 tag: kikuzuki-blueprint
 ---
 

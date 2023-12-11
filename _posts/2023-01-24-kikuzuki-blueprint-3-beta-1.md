@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 菊月復元図v3b1を公開しました
-author: 堀江仁貴
 tag: kikuzuki-blueprint
 ---
 ## 駆逐艦菊月最終時復元図

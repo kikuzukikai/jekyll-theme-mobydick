@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 創作活動に関する声明
-author: 世話人会
 ---
 
 関係各位

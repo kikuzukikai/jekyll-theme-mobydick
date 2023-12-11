@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 令和2年度当会慰霊祭のお誘い
-author: 堀江仁貴
 tag: memorial-service
 ---
 

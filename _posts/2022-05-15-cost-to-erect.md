@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 建立費の支払いを完了しました
-author: 堀江仁貴
 tag: cenotaph
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 設立趣意書
-author: 堀江仁貴
 ---
 
 拝啓
